@@ -9,12 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.example.rmontoya.installationwizardfragment.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class InstallationFragment extends Fragment {
 
     public static final String NAME = "installation";
@@ -22,6 +20,9 @@ public class InstallationFragment extends Fragment {
     private Button nextButton;
     private Button cancelButton;
     private ProgressBar progressBar;
+    private TextView headerText;
+    private TextView finishText;
+
 
     public InstallationFragment() {
     }
@@ -30,16 +31,37 @@ public class InstallationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View fragmentView = inflater.inflate(R.layout.fragment_installation, container, false);
-        nextButton = (Button) fragmentView.findViewById(R.id.next_button);
-        cancelButton = (Button) fragmentView.findViewById(R.id.cancel_button);
-        progressBar = (ProgressBar) fragmentView.findViewById(R.id.progress_bar_installation);
+        setViews(fragmentView);
         setOnClickListeners();
         startInstallationTimer();
         return fragmentView;
     }
 
+    private void setViews(View fragmentView) {
+        headerText = (TextView) fragmentView.findViewById(R.id.installation_header_text);
+        finishText = (TextView) fragmentView.findViewById(R.id.installation_finish_text);
+        nextButton = (Button) fragmentView.findViewById(R.id.next_button);
+        cancelButton = (Button) fragmentView.findViewById(R.id.cancel_button);
+        progressBar = (ProgressBar) fragmentView.findViewById(R.id.progress_bar_installation);
+    }
+
     private void setOnClickListeners() {
-        //TODO set click listeners
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().getSupportFragmentManager().popBackStack();
+            }
+        });
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FinishFragment fragment = new FinishFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, fragment)
+                        .addToBackStack(FinishFragment.NAME)
+                        .commit();
+            }
+        });
     }
 
     private void startInstallationTimer() {
@@ -52,10 +74,16 @@ public class InstallationFragment extends Fragment {
             @Override
             public void onFinish() {
                 nextButton.setEnabled(true);
-                progressBar.setVisibility(View.GONE);
+                changeVisibility();
             }
         };
         countDownTimer.start();
+    }
+
+    private void changeVisibility() {
+        progressBar.setVisibility(View.GONE);
+        finishText.setVisibility(View.VISIBLE);
+        headerText.setVisibility(View.GONE);
     }
 
 }

@@ -9,7 +9,11 @@
         this wizard will install Fragments in your android device.
         Do not restart or turn-off your device while the wizard is installing Fragments.
         You may start by clicking on the Start Button!</string>
-    <string name="installation_title">Fragments is installing, please wait...this could take a couple of moments</string>
+    <string name="installation_title">Fragments is installing, please wait this could take a couple of seconds</string>
     <string name="next">Next</string>
     <string name="cancel_button">Cancel</string>
+    <string name="installation_complete_text">The Installation is complete!.Please proceed to the final step by clicking on the Next Button.</string>
+    <string name="exit_wizard">Exit</string>
+    <string name="back_button">Back</string>
+    <string name="finish_text">Congratulations you now have Fragments installed in your device. That\'s all you may finish this wizard by clicking on Exit Button.</string>
 </resources>

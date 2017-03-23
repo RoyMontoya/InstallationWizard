@@ -10,9 +10,6 @@ import android.widget.Button;
 
 import com.example.rmontoya.installationwizardfragment.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class StartFragment extends Fragment {
 
     public static final String NAME = "start";
@@ -41,6 +38,5 @@ public class StartFragment extends Fragment {
                 .addToBackStack(InstallationFragment.NAME)
                 .commit();
     }
-
 
 }

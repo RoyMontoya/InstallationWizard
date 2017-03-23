@@ -7,14 +7,17 @@
 
 
     <TextView
-        android:textSize="16sp"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
+        android:id="@+id/installation_header_text"
+        style="@style/installation_info_text"
         android:layout_marginTop="@dimen/start_title_margin_top"
-        android:padding="@dimen/standard_element_padding"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/installation_title" />
+
+    <TextView
+        android:id="@+id/installation_finish_text"
+        android:text="@string/installation_complete_text"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        style="@style/installation_info_text" />
 
     <ProgressBar
         android:id="@+id/progress_bar_installation"
@@ -25,7 +28,7 @@
         />
 
     <LinearLayout
-        android:layout_margin="@dimen/standard_element_padding"
+        android:layout_margin="@dimen/standard_element_margin"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
@@ -35,7 +38,7 @@
         <Button
             android:id="@+id/cancel_button"
             android:text="@string/cancel_button"
-            android:layout_marginRight="@dimen/standard_element_padding"
+            android:layout_marginRight="@dimen/standard_element_margin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
