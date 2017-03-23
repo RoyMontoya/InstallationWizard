@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_background"
+    tools:context="com.example.rmontoya.installationwizardfragment.fragments.StartFragment">
+
+    <TextView
+        style="@style/start_fragment_title_style"
+        android:text="@string/start_title" />
+
+    <TextView style="@style/start_paragraph_text" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/standard_element_padding"
+        android:text="@string/start_button" />
+
+</RelativeLayout>

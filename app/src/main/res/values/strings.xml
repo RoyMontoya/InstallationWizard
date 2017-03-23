@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">InstallationWizardFragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_button">Start</string>
+    <string name="start_title">Welcome to Fragments</string>
+    <string name="start_paragraph_text">Thank you for choosing Fragments,
+        this wizard will install Fragments in your android device.
+        Do not restart or turn-off your device while the wizard is installing Fragments.
+        You may start by clicking on the Start Button!</string>
+    <string name="installation_title">Fragments is installing, please wait...this could take a couple of moments</string>
+    <string name="next">Next</string>
+    <string name="cancel_button">Cancel</string>
+</resources>

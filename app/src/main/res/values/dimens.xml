@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_element_padding">16dp</dimen>
+    <dimen name="start_title_text_size">32dp</dimen>
+    <dimen name="start_title_margin_top">24dp</dimen>
+    <dimen name="start_paragraph_text_size">24sp</dimen>
+</resources>
