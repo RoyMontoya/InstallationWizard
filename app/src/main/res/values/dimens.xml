@@ -4,5 +4,5 @@
     <dimen name="start_title_text_size">32dp</dimen>
     <dimen name="start_title_margin_top">24dp</dimen>
     <dimen name="paragraph_text_size">24sp</dimen>
-    <dimen name="installation_info_text_size">24sp</dimen>
+    <dimen name="installation_header_text_size">16sp</dimen>
 </resources>

@@ -84,6 +84,7 @@ public class InstallationFragment extends Fragment {
         progressBar.setVisibility(View.GONE);
         finishText.setVisibility(View.VISIBLE);
         headerText.setVisibility(View.GONE);
+        cancelButton.setVisibility(View.GONE);
     }
 
 }

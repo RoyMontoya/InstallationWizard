@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity {
                 .addToBackStack(StartFragment.NAME)
                 .commit();
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }

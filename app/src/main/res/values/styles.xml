@@ -18,24 +18,19 @@
         <item name="android:layout_marginTop">@dimen/start_title_margin_top</item>
     </style>
 
-    <style name="start_paragraph_text">
-        <item name="android:lines">8</item>
+    <style name="paragraph_text">
         <item name="android:textColor">@android:color/black</item>
         <item name="android:textSize">@dimen/paragraph_text_size</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:layout_margin">@dimen/standard_element_margin</item>
         <item name="android:layout_centerInParent">true</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:text">@string/start_paragraph_text</item>
     </style>
 
-    <style name="installation_info_text">
-        <item name="android:textColor">@android:color/black</item>
-        <item name="android:padding">@dimen/standard_element_margin</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">@dimen/paragraph_text_size</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="installation_header_text" parent="paragraph_text">
+        <item name="android:textSize">@dimen/installation_header_text_size</item>
+        <item name="android:layout_centerInParent">false</item>
     </style>
 
 </resources>

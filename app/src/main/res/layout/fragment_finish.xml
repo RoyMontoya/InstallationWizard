@@ -6,7 +6,7 @@
     tools:context="com.example.rmontoya.installationwizardfragment.fragments.FinishFragment">
 
     <TextView
-        style="@style/start_paragraph_text"
+        style="@style/paragraph_text"
         android:text="@string/finish_text" />
 
     <LinearLayout
