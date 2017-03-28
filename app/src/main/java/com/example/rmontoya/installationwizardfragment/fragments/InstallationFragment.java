@@ -23,7 +23,6 @@ public class InstallationFragment extends Fragment {
     private TextView headerText;
     private TextView finishText;
 
-
     public InstallationFragment() {
     }
 
@@ -68,7 +67,6 @@ public class InstallationFragment extends Fragment {
         CountDownTimer countDownTimer = new CountDownTimer(5000, 1000) {
             @Override
             public void onTick(long l) {
-
             }
 
             @Override

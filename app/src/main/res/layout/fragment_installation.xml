@@ -5,7 +5,6 @@
     android:background="@color/fragment_background"
     tools:context="com.example.rmontoya.installationwizardfragment.fragments.InstallationFragment">
 
-
     <TextView
         android:id="@+id/installation_header_text"
         style="@style/installation_header_text"
@@ -14,44 +13,40 @@
 
     <TextView
         android:id="@+id/installation_finish_text"
-        android:text="@string/installation_complete_text"
+        style="@style/paragraph_text"
         android:layout_centerInParent="true"
-        android:visibility="gone"
-        style="@style/paragraph_text" />
+        android:text="@string/installation_complete_text"
+        android:visibility="gone" />
 
     <ProgressBar
         android:id="@+id/progress_bar_installation"
-        android:layout_centerInParent="true"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:layout_centerInParent="true" />
 
     <LinearLayout
-        android:layout_margin="@dimen/standard_element_margin"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/standard_element_margin"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/cancel_button"
-            android:text="@string/cancel_button"
-            android:layout_marginRight="@dimen/standard_element_margin"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standard_element_margin"
+            android:text="@string/cancel_button" />
 
         <Button
             android:id="@+id/next_button"
-            android:text="@string/next"
-            android:enabled="false"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/next" />
 
     </LinearLayout>
-
-
 
 </RelativeLayout>

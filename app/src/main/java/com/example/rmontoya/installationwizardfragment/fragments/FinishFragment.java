@@ -3,7 +3,6 @@ package com.example.rmontoya.installationwizardfragment.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,10 +16,8 @@ public class FinishFragment extends Fragment {
     private Button exitButton;
     private Button backButton;
 
-
     public FinishFragment() {
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,7 +32,6 @@ public class FinishFragment extends Fragment {
         exitButton = (Button) fragmentView.findViewById(R.id.exit_wizard_button);
         backButton = (Button) fragmentView.findViewById(R.id.back_button);
     }
-
 
     private void setOnClickListeners() {
         exitButton.setOnClickListener(new View.OnClickListener() {
